@@ -12,7 +12,7 @@
     NSNumber *_portion; //the portion
     id _converterFormula; //to-do the formula to convert from one measurement to another group
     NSNumber *_calories;
-    NSNumber *_totalFat[2];
+    NSArray *_totalFat;
     NSNumber *_cholesterol;
     NSNumber *_sodium;
     NSNumber *_carbs;
@@ -22,17 +22,28 @@
     NSMutableArray *_nutrition; //array that stores other information
 }
 
-//- (id) initWithCalories:(NSNumber *)calories,
-//                totalFat:(NSNumber*)totalFat[2],
+- (id) initWithCalories:(NSNumber *)calories
+                 satFat:(NSNumber *)saturatedFat
+               unsatFat:(NSNumber *)unsatFat
+            cholesterol:(NSNumber *)cholesterol
+                 sodium:(NSNumber *)sodium
+                  carbs:(NSNumber *)carbs
+                  fiber:(NSNumber *)fiber
+                 sugars:(NSNumber *)sugars
+                protein:(NSNumber *)protein
+              nutrition:(NSMutableArray *) nutrition;
+- (id) init; //normal initialization
 
 
-//setters and getters
-@property (nonatomic) NSNumber *totalFat;
+//setters and getters for the properties of a nutrition data model
+@property (nonatomic) NSNumber *calories;
+@property (nonatomic) NSArray *totalFat; //shows saturated and unsaturated fat
 @property (nonatomic) NSNumber *cholesterol;
 @property (nonatomic) NSNumber *sodium;
 @property (nonatomic) NSNumber *carbs;
 @property (nonatomic) NSNumber *fiber;
 @property (nonatomic) NSNumber *sugars;
 @property (nonatomic) NSNumber *protein;
+@property (nonatomic) NSMutableArray *nutrition; //other nutritional facts - vitamins and minerals
 
 @end
