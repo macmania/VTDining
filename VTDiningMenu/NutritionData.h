@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+GENERICSABLE(NutritionData);
 
-@interface NutritionData : NSObject
+@interface NutritionData : NSObject <NutritionData>
 
+@property (nonatomic) NSString *typeNutrition; //type of nutritional facts
+@property (nonatomic) NSNumber *amount; //the amount of nutritional 
 @end

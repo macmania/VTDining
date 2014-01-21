@@ -8,6 +8,6 @@
 
 #import "NutritionData.h"
 
-@implementation NutritionData
+@implementation NutritionData 
 
 @end
