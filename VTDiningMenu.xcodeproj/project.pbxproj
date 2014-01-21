@@ -25,6 +25,10 @@
 		DBC5664E188ED7D8000F6A43 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC56629188ED7D8000F6A43 /* CoreData.framework */; };
 		DBC56656188ED7D8000F6A43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBC56654188ED7D8000F6A43 /* InfoPlist.strings */; };
 		DBC56658188ED7D8000F6A43 /* VTDiningMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC56657188ED7D8000F6A43 /* VTDiningMenuTests.m */; };
+		DBC56665188EDBD5000F6A43 /* NutritionDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC56664188EDBD5000F6A43 /* NutritionDataModel.m */; };
+		DBC5666C188EE08F000F6A43 /* NutritionData.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC5666B188EE08F000F6A43 /* NutritionData.m */; };
+		DBC5666F188EEC81000F6A43 /* DiningFacilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC5666E188EEC81000F6A43 /* DiningFacilities.m */; };
+		DBC56672188F0690000F6A43 /* WebParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC56671188F0690000F6A43 /* WebParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,13 @@
 		DBC56653188ED7D8000F6A43 /* VTDiningMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VTDiningMenuTests-Info.plist"; sourceTree = "<group>"; };
 		DBC56655188ED7D8000F6A43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBC56657188ED7D8000F6A43 /* VTDiningMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTDiningMenuTests.m; sourceTree = "<group>"; };
+		DBC56663188EDBD5000F6A43 /* NutritionDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NutritionDataModel.h; sourceTree = "<group>"; };
+		DBC56664188EDBD5000F6A43 /* NutritionDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NutritionDataModel.m; sourceTree = "<group>"; };
+		DBC5666B188EE08F000F6A43 /* NutritionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NutritionData.m; sourceTree = "<group>"; };
+		DBC5666D188EEC81000F6A43 /* DiningFacilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiningFacilities.h; sourceTree = "<group>"; };
+		DBC5666E188EEC81000F6A43 /* DiningFacilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiningFacilities.m; sourceTree = "<group>"; };
+		DBC56670188F0690000F6A43 /* WebParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebParser.h; sourceTree = "<group>"; };
+		DBC56671188F0690000F6A43 /* WebParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +134,8 @@
 		DBC5662B188ED7D8000F6A43 /* VTDiningMenu */ = {
 			isa = PBXGroup;
 			children = (
+				DBC56662188ED804000F6A43 /* Controllers */,
+				DBC56661188ED7FB000F6A43 /* DataModels */,
 				DBC56634188ED7D8000F6A43 /* VisualizeMenuAppDelegate.h */,
 				DBC56635188ED7D8000F6A43 /* VisualizeMenuAppDelegate.m */,
 				DBC56637188ED7D8000F6A43 /* Main.storyboard */,
@@ -164,6 +177,27 @@
 				DBC56654188ED7D8000F6A43 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBC56661188ED7FB000F6A43 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				DBC56663188EDBD5000F6A43 /* NutritionDataModel.h */,
+				DBC56664188EDBD5000F6A43 /* NutritionDataModel.m */,
+				DBC5666B188EE08F000F6A43 /* NutritionData.m */,
+				DBC5666D188EEC81000F6A43 /* DiningFacilities.h */,
+				DBC5666E188EEC81000F6A43 /* DiningFacilities.m */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
+		DBC56662188ED804000F6A43 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBC56670188F0690000F6A43 /* WebParser.h */,
+				DBC56671188F0690000F6A43 /* WebParser.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC56665188EDBD5000F6A43 /* NutritionDataModel.m in Sources */,
 				DBC56636188ED7D8000F6A43 /* VisualizeMenuAppDelegate.m in Sources */,
 				DBC56632188ED7D8000F6A43 /* main.m in Sources */,
+				DBC56672188F0690000F6A43 /* WebParser.m in Sources */,
+				DBC5666F188EEC81000F6A43 /* DiningFacilities.m in Sources */,
 				DBC5663F188ED7D8000F6A43 /* VisualizeMenuMasterViewController.m in Sources */,
+				DBC5666C188EE08F000F6A43 /* NutritionData.m in Sources */,
 				DBC56642188ED7D8000F6A43 /* VisualizeMenuDetailViewController.m in Sources */,
 				DBC5663C188ED7D8000F6A43 /* VTDiningMenu.xcdatamodeld in Sources */,
 			);
